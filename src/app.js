@@ -6,6 +6,6 @@ import userRouter from "./routers/userRouter";
 const app = express();
 app.use(bodyParser.json());
 
-app.use("/", userRouter);
+app.use(routes.home, userRouter);
 
 export default app;
